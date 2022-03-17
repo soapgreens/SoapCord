@@ -1,0 +1,414 @@
+/**
+  * @name Soapcord 
+  * @author Soap#5266
+  * @description Hey! this is MY theme, go away
+  * @website https://twitter.com/SoapDoStuff
+  * @version V1
+*/
+
+:root {
+/*
+	background variables );
+*/
+
+    --background-image: url(https://i.imgur.com/LqSvoex.png);
+  	--background-primary: rgba(37, 37, 37, 0.411);
+    --background-secondary: rgba(0, 0, 0, 0.318);
+    --background-secondary-alt: rgba(0, 0, 0, 0.425);
+    --background-tertiary: var(--background-secondary);
+    --background-tertiary-alt: rgb(29, 29, 29) ;
+    --background-accent: #5cee9994;
+    --background-accent-alt: #5cee9962;
+    --background-floating: #000000;
+    --background-nested-floating: #1b1b1b;
+    --background-mobile-primary: #181818;
+    --background-mobile-secondary: var(--background-secondary);
+    --background-modifier-hover: rgba(82, 82, 82, 0.16);
+    --background-modifier-active: rgba(86, 86, 87, 0.24);
+    --background-modifier-selected: rgba(87, 87, 87, 0.32);
+    --background-modifier-accent: hsla(0,0%,100%,0.06);
+	  --channeltextarea-background: rgba(0, 0, 0, 0.438) !important;
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --interactive-normal: #b9beb9;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #35373a;
+    --info-positive-text: #fff;
+    --info-warning-text: #fff;
+    --info-danger-text: #fff;
+    --status-warning-text: #000;
+    --scrollbar-thin-thumb: #202225;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #202225;
+    --channels-default: #8e9297;
+    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    --channeltextarea-background: #474747;
+    --activity-card-background: #202225;
+    --textbox-markdown-syntax: #8e9297;
+    --spoiler-revealed-background: #292b2f;
+    --spoiler-hidden-background: #202225;
+    --brand-experiment: rgb(17, 17, 17); 
+    --text-positive: rgb(255, 255, 255);
+    --background-grey: rgb(22, 22, 22);
+}
+/*
+  applies background to different parts of discord
+*/
+.appMount-2yBXZl, .bg-1QIAus {background-image:var(--background-image) !important;background-size:cover !important}
+.container-ZMc96U.themed-Hp1KC_ {
+    background: var(--background-secondary);
+}
+/*
+  color fixups for different parts that wont take in the colors by default 
+*/
+.theme-dark .container-2cd8Mz {
+    background-color: var(--background-secondary);
+}
+
+.scroller-WSmht3, .wrapper-1_HaEi, .membersWrap-3NUR2t, .wrapper-1_HaEi, .members-3WRCEx.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN , .members-3WRCEx, .container-1NXEtd,  .scroller-1ox3I2, .privateChannels-oVe7HL, .sidebarRegionScroller-FXiQOh, .members-3WRCEx>div, .privateChannels-oVe7HL .searchBar-3TnChZ, .privateChannels-oVe7HL .scroller-WSmht3.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN  {
+  background: transparent;
+}
+
+.avatar-3mTjvZ, .lookFilled-yCfaCM.colorGreen-3y-Z79, .bd-button, .autocomplete-3NRXG8.autocomplete-3jLKbj.autocompleteAttached-bt_md- , .container-2nx-BQ, .container-2nx-BQ.[element.style], .theme-dark .focused-2FU0YH, .autocomplete-3NRXG8 {
+    background-color: var(--background-floating) !important;
+}
+.autocomplete-3NRXG8{
+  background-color: var(--background-floating)!important;
+}
+.bd-switch input:checked+.bd-switch-body {
+    --switch-color: var(--background-floating);
+}
+
+.theme-dark .root-g14mjS,.theme-dark .footer-31IekZ{
+  background-color: var(--background-secondary);
+}
+
+.expandedFolderIconWrapper-3RwQpD [viewBox="0 0 24 24"]{
+  color: var(--background-accent)!important;
+}
+
+.folder-241Joy [aria-hidden="true"] {
+   background-color: var(--background-primary)!important;
+ }
+.ChannelDms-channelmembers-wrap .privateChannels-oVe7HL {
+   background: var(--background-secondary)!important;
+ }
+
+.theme-dark .container-2McqkF{
+   background-color: var(--background-tertiary-alt);
+ }
+
+.theme-dark .option-2KkUJO:after {
+    background: transparent;
+}
+
+.fieldList-in8WkP{
+  background-color: transparent;
+}
+
+.itemCard-3Etziu.wrapper-2RrXDg.outer-2JOHae.padded-2NSY6O.interactive-2zD88a div .body-16rSsp.inset-SbsSFp{
+background-color: var(--background-primary);
+box-shadow: 0 0 0 2px var(--background-accent) inset, 0 0 0 4px rgb(0, 0, 0) inset;
+}
+
+.outer-2JOHae.interactive-2zD88a:hover, .selected-3H3-RC {
+  box-shadow: 0 0 0 2px var(--background-accent) inset, 0 0 0 4px rgb(0, 0, 0) inset;
+  background-color: var(--background-secondary) !important;
+}
+
+/*
+  home icon change and spin
+*/
+.homeIcon-r0w4ny path { fill: transparent }
+.homeIcon-r0w4ny {
+background: url('https://raw.githubusercontent.com/soapgreens/comm-images/main/soapcord.svg') center/cover no-repeat;
+min-width: 60px;
+min-height: 60px;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-20deg);
+    }
+    70% {
+        transform: rotate(380deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.pill-L_aLMQ.bd-selected + .listItemWrapper-3d87LP .homeIcon-r0w4ny {
+    animation: spin 0.8s ease;
+}
+
+/*
+  makes stuff pretty
+*/
+.member-2gU6Ar, .member-2gU6Ar.container-1oeRFJ.clickable-28SzVr{
+  background: var(--background-tertiary-alt)!important;
+  border-radius: 24px;
+  box-shadow: 0 0 0 2px var(--background-accent) inset, 0 0 0 4px rgb(0, 0, 0) inset;
+}
+.scroller-kQBbkU::-webkit-scrollbar-track {
+    background-color:var(--background-tertiary);
+}
+.scroller-kQBbkU::-webkit-scrollbar-thumb {
+    background-color: var(--background-accent);
+    box-shadow: 0 0 0 3px var(--background-tertiary-alt) inset, 0 0 0 1px var(--background-floating) inset;
+}
+.item-3XjbnG.selected-g-kMVV{
+  border-radius: 32px;
+  box-shadow: 0 0 0 2px var(--background-accent) inset, 0 0 0 4px rgb(0, 0, 0) inset;
+  background-color: var(--background-tertiary-alt) !important;
+}
+.brand-3g5E0C.item-3XjbnG, .themed-2-lozF.item-3XjbnG {
+  border-radius: 32px;
+}
+.side-2ur1Qk .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP), .topPill-3DJJNV .themed-2-lozF.item-3XjbnG:hover:not(.disabled-1nofHP){
+  background-color: var(--background-accent-alt) ;
+}
+[role="tablist"] .tabBarItem-30Te4-.item-3XjbnG.themed-2-lozF, .tabBarItem-3nPo4Z.item-3XjbnG.brand-3g5E0C.selected-g-kMVV, .tabBarItem-3nPo4Z.item-3XjbnG.brand-3g5E0C {
+    border-radius: 0px !important;
+    box-shadow: none;
+    background-color: transparent !important;
+}
+/*
+  makes user popout pretty
+*/
+.avatarWrapper-eenWra {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    left: 75px;
+}
+
+.userPopout-2j1gM4[role="dialog"]{
+  width: 250px !important;
+  background-color: var(--background-grey);
+   box-shadow: 0 0 0 2px rgb(0, 0, 0), 0 0 0 4px var(--background-accent);
+}
+.popoutBanner-3cqRD9, .popoutBannerPremium-3i5EEI {
+width: 250px;
+height: 80px;
+border-radius: 8px 8px 0px 0px;
+}
+.bodyInnerWrapper-2bQs1k {
+    background-color: var(--background-grey);
+    color: var(--interactive-active);
+}
+.UserDetails-badge-connection.UserDetails-badge-verified .UserDetails-badge-verifiedBadge {
+    background: var(--background-accent) !important;
+}
+.avatar-2Vndt_ {
+    border: 6px solid var(--background-grey);
+    background-color: var(--background-grey);
+}
+.footer-3naVBw {
+    background-color: transparent;
+    color: var(--interactive-active);
+}
+.UserDetails-mutualFriends-stack .UserDetails-mutualFriends-mutualFriend {
+    background: transparent !important;
+}
+.divider-1wtgZ3{
+  height: 2px;
+  background-color: var(--background-accent);
+}
+
+/*
+ lgbt badges bc they look cooler
+*/
+
+
+  /*
+   brilliance badges
+  */
+  [aria-label="HypeSquad Brilliance"] .profileBadge22-3GAYRy.profileBadge-12r2Nm.desaturate-_Twf3u {
+
+  content: url(/assets/88d4f11bee9ea34fee59973b33353da0.svg) !important;
+  max-width: 70%;
+  height: auto;
+  margin-left: auto;  
+  margin-right: auto;  
+  margin-top: 15%;
+  }
+
+
+  /*
+   balance badges
+  */
+
+
+  [aria-label="HypeSquad Balance"] .profileBadge22-3GAYRy.profileBadge-12r2Nm.desaturate-_Twf3u {
+
+  content: url(/assets/3245b2cd85b787b195ea8f6e10ef5790.svg);
+  max-width: 70%;
+  height: auto;
+  margin-left: auto;  
+  margin-right: auto;  
+  margin-top: 15%;
+  }
+
+  /*
+   bravery badges
+  */
+
+
+  [aria-label="HypeSquad Bravery"] .profileBadge22-3GAYRy.profileBadge-12r2Nm.desaturate-_Twf3u {
+
+  content: url(/assets/26a2dc8c9d70955a988cb377eec84c22.svg);
+  max-width: 70%;
+  height: auto;
+  margin-left: auto;  
+  margin-right: auto;  
+  margin-top: 15%;
+  }
+
+
+
+
+
+/* Unclamp the About Me section, so it's not limited to just 6 lines. (normally it cuts off at 6 and adds a ...) */
+.clamped-2ZePhX{
+    -webkit-line-clamp: 190; /*Maximum amount of characters as new lines, unset just breaks links*/
+    max-height:112px;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+.clamped-2ZePhX::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.clamped-2ZePhX::-webkit-scrollbar-track {
+  background-color: var(--background-tertiary-alt); /*Edit this to what color you want the track to be.*/
+}
+.clamped-2ZePhX::-webkit-scrollbar-thumb {
+  background: var(--background-secondary-alt); /* Edit this to whatever color/colors you'd like*/
+}
+
+
+  /*
+    channeldms
+  */
+  .scroller-WSmht3.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN, .searchBar-3TnChZ{
+    background: var(--background-secondary)
+  }
+  /*
+  changes size and adds an animation
+  */
+  .ChannelDms-channelpopout-popout.ChannelDms-channelpopout-collapsed {
+    width: 0 !important;
+     transition: width 0.5s;  
+  }
+  .ChannelDms-channelpopout-popout {
+  transition: width 0.5s;
+
+  }
+  .ChannelDms-channelpopout-popout.ChannelDms-channelpopout-collapsed .chatContent-a9vAAp {
+    width: 475px !important;
+  }
+  .ChannelDms-channelpopout-popout, .ChannelDms-channelpopout-popout .chatContent-a9vAAp {
+  width: 475px !important;
+  }
+
+  /*
+    color alterations
+  */
+
+  .ChannelDms-channelpopout-popout .ChannelDms-channelpopout-header {
+    
+      background: var(--background-secondary-alt) !important;
+   
+  }
+
+  .button-1yVL_7.default-1Tkeeg.ChannelDms-channelpopout-removeButton {
+  
+    background-color: var(--background-tertiary-alt);
+    border-radius: 12px !important;
+  }
+  .ChannelDms-channelpopout-popout {
+      background: var(--background-secondary-alt) !important;
+      border-radius: 12px !important;
+  }
+
+
+  /*
+    close button edits
+  */
+
+  .theme-dark .button-1yVL_7 {
+
+      box-shadow: 0 0 0 2px rgb(122, 122, 122); 
+  }
+  .theme-dark .button-1yVL_7:hover {
+      box-shadow: 0 0 0 10px rgb(240, 240, 240)
+    }
+
+  .ChannelDms-channelpopout-popout .default-1Tkeeg {
+      background-image: url(/assets/88d4f11bee9ea34fee59973b33353da0.svg);
+  }
+  .ChannelDms-channelpopout-popout .button-1yVL_7 {
+     width: 24px;
+     height: 24px;
+
+  }
+  .ChannelDms-channelpopout-popout .ChannelDms-channelpopout-removeButton {
+      position: absolute;
+      top: -10px!important;
+     right: -10px!important;
+  }
+  .ChannelDms-channelpopout-headerName {
+
+     font-family: Whitney !important;
+     font-weight: 510 !important;
+
+
+
+  }
+
+  /*
+    collapse button edits
+  */
+  .ChannelDms-channelpopout-popout .ChannelDms-channelpopout-collapseButton{
+     z-index: 90;
+    background: var(--background-tertiary-alt) !important;
+
+  }
+  /*
+    removes call buttons
+  */
+  .ChannelDms-channelpopout-buttons .iconWrapper-2awDjA.clickable-ZD7xvu[aria-label="Start Voice Call"],[aria-label="Start Video Call"] {
+  display: none;
+
+  }
+
+
+/*
+  moves clock down
+*/
+  #clockPluginClock{
+
+    top: 97%;
+    left: 75% !important;
+  }
+
+  /*
+    fixes zere's betterformatting popup
+  */
+.bf-toolbar::before {
+
+  background: var(--background-secondary)!important;
+
+}
+
+
+
+
+.buss.it.down{
+  --sexual-style: goated with the sauce ;
+}
