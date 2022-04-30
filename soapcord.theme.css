@@ -57,7 +57,7 @@
 */
 .appMount-2yBXZl, .bg-1QIAus {background-image:var(--background-image) !important;background-size:cover !important}
 .container-ZMc96U.themed-Hp1KC_ {
-    background: var(--background-secondary);
+    background: transparent;
 }
 /*
   color fixups for different parts that wont take in the colors by default 
@@ -65,9 +65,6 @@
 .theme-dark .container-2cd8Mz {
     background-color: var(--background-secondary);
 }
-
-.container-ZMc96U.themed-Hp1KC_ {
-    background: transparent;
 
 .scroller-WSmht3, .wrapper-1_HaEi, .membersWrap-3NUR2t, .wrapper-1_HaEi, .members-3WRCEx.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN , .members-3WRCEx, .container-1NXEtd,  .scroller-1ox3I2, .privateChannels-oVe7HL, .sidebarRegionScroller-FXiQOh, .members-3WRCEx>div, .privateChannels-oVe7HL .searchBar-3TnChZ, .privateChannels-oVe7HL .scroller-WSmht3.thin-31rlnD.scrollerBase-_bVAAt.fade-1R6FHN  {
   background: transparent;
