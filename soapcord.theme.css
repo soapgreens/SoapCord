@@ -406,9 +406,38 @@ border-radius: 8px 8px 0px 0px;
 
 }
 
+/*
+  changes error screen 
+*/
+.title-NjUt5y{
+  visibility: hidden;}
 
+.title-NjUt5y:after{
+  content: 'skill issue' !important;
+  visibility: visible;
+  display: block;
+  position: center;
+}
 
+.note-Ph806N{
+  visibility: hidden;
+  height: 0px;
+}
 
+.note-Ph806N::before{
+  content: 'check your plugins folder';
+  visibility: visible;
+  display: inline-block;
+  position: center;
+}
+
+.text-3IbNaT{height: 50px;}
+
+.image-35kDIs{
+background-image: url(https://github.com/soapgreens/comm-images/blob/main/Screenshot_1.png?raw=true) !important;
+width: 158px;
+height: 153px;
+}
 .buss.it.down{
   --sexual-style: goated with the sauce ;
 }
